@@ -31,177 +31,211 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxEliminar = new System.Windows.Forms.TextBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.Label();
+            this.txbID = new System.Windows.Forms.TextBox();
+            this.Nombre = new System.Windows.Forms.Label();
+            this.txbNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txbFecha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbxActividad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbxColorInterfaz = new System.Windows.Forms.TextBox();
+            this.btnMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 56);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 46);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(712, 337);
+            this.dataGridView1.Size = new System.Drawing.Size(534, 274);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(589, 13);
+            this.btnLimpiar.Location = new System.Drawing.Point(442, 11);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(189, 33);
+            this.btnLimpiar.Size = new System.Drawing.Size(142, 27);
             this.btnLimpiar.TabIndex = 1;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(40, 462);
+            this.btnEliminar.Location = new System.Drawing.Point(30, 375);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(189, 33);
+            this.btnEliminar.Size = new System.Drawing.Size(142, 27);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // textBox1
+            // tbxEliminar
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 417);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 22);
-            this.textBox1.TabIndex = 3;
+            this.tbxEliminar.Location = new System.Drawing.Point(17, 339);
+            this.tbxEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxEliminar.Name = "tbxEliminar";
+            this.tbxEliminar.Size = new System.Drawing.Size(175, 20);
+            this.tbxEliminar.TabIndex = 3;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(500, 412);
+            this.btnActualizar.Location = new System.Drawing.Point(375, 335);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(138, 33);
+            this.btnActualizar.Size = new System.Drawing.Size(104, 27);
             this.btnActualizar.TabIndex = 4;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(650, 412);
+            this.btnAgregar.Location = new System.Drawing.Point(488, 335);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(138, 33);
+            this.btnAgregar.Size = new System.Drawing.Size(104, 27);
             this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // label1
+            // ID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(877, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "label1";
+            this.ID.AutoSize = true;
+            this.ID.Location = new System.Drawing.Point(627, 39);
+            this.ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(18, 13);
+            this.ID.TabIndex = 6;
+            this.ID.Text = "ID";
             // 
-            // textBox2
+            // txbID
             // 
-            this.textBox2.Location = new System.Drawing.Point(840, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 22);
-            this.textBox2.TabIndex = 7;
+            this.txbID.Location = new System.Drawing.Point(630, 54);
+            this.txbID.Margin = new System.Windows.Forms.Padding(2);
+            this.txbID.Name = "txbID";
+            this.txbID.Size = new System.Drawing.Size(91, 20);
+            this.txbID.TabIndex = 7;
             // 
-            // label2
+            // Nombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(877, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "label2";
+            this.Nombre.AutoSize = true;
+            this.Nombre.Location = new System.Drawing.Point(627, 82);
+            this.Nombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Size = new System.Drawing.Size(44, 13);
+            this.Nombre.TabIndex = 8;
+            this.Nombre.Text = "Nombre";
             // 
-            // textBox3
+            // txbNombre
             // 
-            this.textBox3.Location = new System.Drawing.Point(840, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 22);
-            this.textBox3.TabIndex = 9;
+            this.txbNombre.Location = new System.Drawing.Point(630, 97);
+            this.txbNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txbNombre.Name = "txbNombre";
+            this.txbNombre.Size = new System.Drawing.Size(91, 20);
+            this.txbNombre.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(877, 157);
+            this.label3.Location = new System.Drawing.Point(634, 128);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 10;
-            this.label3.Text = "label3";
+            this.label3.Text = "Fecha";
             // 
-            // textBox4
+            // txbFecha
             // 
-            this.textBox4.Location = new System.Drawing.Point(840, 176);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(120, 22);
-            this.textBox4.TabIndex = 11;
+            this.txbFecha.Location = new System.Drawing.Point(630, 143);
+            this.txbFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.txbFecha.Name = "txbFecha";
+            this.txbFecha.Size = new System.Drawing.Size(91, 20);
+            this.txbFecha.TabIndex = 11;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(877, 220);
+            this.label4.Location = new System.Drawing.Point(636, 179);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 12;
-            this.label4.Text = "label4";
+            this.label4.Text = "Actividad";
             // 
-            // textBox5
+            // tbxActividad
             // 
-            this.textBox5.Location = new System.Drawing.Point(840, 239);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(120, 22);
-            this.textBox5.TabIndex = 13;
+            this.tbxActividad.Location = new System.Drawing.Point(630, 194);
+            this.tbxActividad.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxActividad.Name = "tbxActividad";
+            this.tbxActividad.Size = new System.Drawing.Size(91, 20);
+            this.tbxActividad.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(877, 281);
+            this.label5.Location = new System.Drawing.Point(634, 237);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "label5";
+            this.label5.Text = "Color Interfaz";
             // 
-            // textBox6
+            // tbxColorInterfaz
             // 
-            this.textBox6.Location = new System.Drawing.Point(840, 310);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(120, 22);
-            this.textBox6.TabIndex = 15;
-            this.textBox6.Text = " ";
+            this.tbxColorInterfaz.Location = new System.Drawing.Point(630, 252);
+            this.tbxColorInterfaz.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxColorInterfaz.Name = "tbxColorInterfaz";
+            this.tbxColorInterfaz.Size = new System.Drawing.Size(91, 20);
+            this.tbxColorInterfaz.TabIndex = 15;
+            this.tbxColorInterfaz.Text = " ";
+            // 
+            // btnMostrar
+            // 
+            this.btnMostrar.Location = new System.Drawing.Point(30, 15);
+            this.btnMostrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(142, 27);
+            this.btnMostrar.TabIndex = 16;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 520);
-            this.Controls.Add(this.textBox6);
+            this.ClientSize = new System.Drawing.Size(790, 422);
+            this.Controls.Add(this.btnMostrar);
+            this.Controls.Add(this.tbxColorInterfaz);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbxActividad);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txbFecha);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txbNombre);
+            this.Controls.Add(this.Nombre);
+            this.Controls.Add(this.txbID);
+            this.Controls.Add(this.ID);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnActualizar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxEliminar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inicio";
             this.Text = "Inicio";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -215,18 +249,19 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxEliminar;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label ID;
+        private System.Windows.Forms.TextBox txbID;
+        private System.Windows.Forms.Label Nombre;
+        private System.Windows.Forms.TextBox txbNombre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txbFecha;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbxActividad;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbxColorInterfaz;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }
