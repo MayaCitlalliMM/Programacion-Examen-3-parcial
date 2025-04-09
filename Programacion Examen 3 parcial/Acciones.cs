@@ -25,7 +25,7 @@ namespace Programacion_Examen_3_parcial
         public bool ActualizarJugador(int iD, string name, DateTime fecha, bool activo, string colorInterfaz)
         {
 
-
+            //asda
             try
             {
                 var objetliminar = PersonasJugando.Find(x => x.ID == iD);
