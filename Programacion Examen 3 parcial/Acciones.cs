@@ -44,7 +44,7 @@ namespace Programacion_Examen_3_parcial
         public bool EliminarJugador(int iD)
         {
 
-
+            //
             try
             {
                 var objetliminar = PersonasJugando.Find(x => x.ID == iD);
