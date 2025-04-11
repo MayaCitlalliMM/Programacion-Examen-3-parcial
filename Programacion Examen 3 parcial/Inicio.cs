@@ -28,11 +28,11 @@ namespace Programacion_Examen_3_parcial
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int ID = Convert.ToInt32(txbID.Text);
+            int ID = Convert.ToInt32(tbxEliminar.Text);
             if (acc.EliminarJugador(ID))
                 MessageBox.Show("Eliminado con exito");
             else
-                MessageBox.Show("fallo al eliminar");
+                MessageBox.Show("fallo al eliminar"); 
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
